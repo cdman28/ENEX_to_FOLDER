@@ -3,8 +3,8 @@ import tkinter as tk
 
 from enex_to_folder.gui.main_window import MainWindow
 
-__version__ = "1.0.2"
-APP_TITLE = "ENEX to Folder v1.0.2"
+__version__ = "1.1.0"
+APP_TITLE = "ENEX to Folder v1.1.0"
 
 
 def main() -> None:
