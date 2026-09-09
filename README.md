@@ -1,4 +1,4 @@
-# ENEX to Folder 변환기 v1.0.0
+# ENEX to Folder 변환기 v1.0.1
 
 Evernote-backup 등으로 만든 `.enex` 파일을 노트별 폴더 구조로 변환하는 Windows GUI 도구입니다.
 
