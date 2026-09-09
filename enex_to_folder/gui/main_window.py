@@ -11,7 +11,7 @@ from tkinter import filedialog, messagebox, scrolledtext, ttk
 
 from enex_to_folder.orchestration.batch_converter import BatchConverter
 
-APP_VERSION = "v1.0.0"
+APP_VERSION = "v1.0.2"
 
 
 class MainWindow:

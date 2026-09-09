@@ -22,9 +22,12 @@ class BatchConverter:
         progress_callback: Optional[ProgressCallback] = None,
         should_stop: Optional[callable] = None,
     ) -> None:
-        """source_dir 안의 모든 .enex 파일을 파싱해서 output_dir 아래에 노트별 폴더로 저장합니다."""
+        """source_dir 안의 모든 .enex 파일을 파싱해서 output_dir 아래에 노트별 폴더로 저장합니다.
+        
+        하위 폴더도 재귀적으로 탐색합니다 (다단계 폴더 지원).
+        """
         os.makedirs(output_dir, exist_ok=True)
-        enex_paths = sorted(glob.glob(os.path.join(source_dir, "*.enex")))
+        enex_paths = sorted(glob.glob(os.path.join(source_dir, "**/*.enex"), recursive=True))
 
         if not enex_paths:
             if progress_callback:
